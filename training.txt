@@ -1,0 +1,14 @@
+https://www.youtube.com/watch?v=2ebpDNeiSZI&list=PL6flErFppaj2ArNxLyR4nQ4JV8qFc56-M&index=6
+
+nth highest salary.
+
+Select * from Emp as E1 where n = (select count(distinct Salary) from Emp as E2 where E2.salary > e1.salary)
+
+
+select ename,total(salary) from Salary
+group by deptId having total(salary) >5000
+
+empId Ename depId salary
+1    E1      1  5000
+2    E2	     1  3000 
+3    E3      2   2000
